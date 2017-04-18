@@ -1,0 +1,79 @@
+*{
+	font-family: sans-serif;
+}
+#contenedor{
+	width: 900px;
+	margin: auto;
+}
+#cabecera{
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 4em;
+	text-transform: uppercase;
+	background-image: url('/img/desert.jpg');
+	background-size: 900px 150px;
+}
+#columna1{
+	width: 180px;
+	float: left;
+	padding: 10px;
+	font-size: .8em;
+}
+#columna2{
+	width: 670px;
+	float: left;
+	padding: 10px;
+	border-left: dashed;
+}
+#pie{
+	clear: both;
+	background-color: grey;
+	font-size: .8em;
+	text-align: center;
+	font-weight: bold;
+}
+#menu ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background-color: black;
+}
+#menu li{
+	display: inline;
+}
+
+#menu a:link, menu a:visited{
+	color: white;
+	text-decoration: none;
+	font-weight: bolder;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 5px 18px;
+	background-image: url('/iconos/page_go.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+
+}
+#menu a:hover{
+	color: black;
+	background-color: white;
+
+}
+
+#contenido form{
+	width: 590px;
+	margin: 20px auto;
+
+}
+#contenido label{
+	display: inline-block;
+	width: 140px;
+}
+
+#contenido .error{
+	color: red;
+	font-weight: bolder;
+	font-size:  .8em;
+}

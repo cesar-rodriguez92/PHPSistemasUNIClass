@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rellena tu CV</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+<h2>Rellena tu CV</h2>
+<form action="insertar_cv.php" method="POST" enctype="multipart/form-data">
+	<label for="nombre">Nombre</label><br>
+	<input type="text" id="nombre" name="nombre" maxlength="30" ></input><br>
+	<label for="apellidos">Apellidos</label><br>
+	<input type="text" id="apellidos" name="apellidos" maxlength="80" ></input><br>
+	<label for="clave">Contraseña</label><br>
+	<input type="text" id="clave" name="clave" maxlength="10"></input><br>
+	<label for="dni">DNI</label><br>
+	<input type="text" id="dni" name="dni"  maxlength="8"></input><br>
+	<label for="sexo">Sexo</label><br>
+	<input type="radio" id="h" name="sexo" >Hombre</input><br>
+	<input type="radio" id="m" name="sexo" >Mujer</input><br><br>
+	<label for="foto">Incluir mi foto</label>
+	<input type="file" id="foto" name="foto" ></input><br><br>
+	<input type="checkbox" id="suscribir" name="suscribir" checked="true" ></input>
+	<label for="suscribir">Suscribirme al boletin de novedades</label><br><br>
+	<input type="submit" value="Guardar cambios"></input> 
+	<input type="reset" value="Borrar los datos introducidos"></input>
+</form>
+</body>
+</html>

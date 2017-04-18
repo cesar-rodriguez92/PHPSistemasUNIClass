@@ -1,0 +1,19 @@
+*{
+	font-family: sans-serif;
+}
+#contenedor{
+	width: 900px;
+	margin: auto;
+}
+#columna1{
+	width: 180px;
+	float: left;
+	padding: 10px;
+	font-size: .8em;
+}
+#columna2{
+	width: 880px;
+	float: left;
+	padding: 10px;
+	border-left: dashed;
+}

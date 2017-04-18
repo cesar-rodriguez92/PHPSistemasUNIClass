@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formularios</title>
+</head>
+<body>
+<h4>Ingreso de datos</h4>
+<form action="recibe.php" method="POST" enctype="multipart/form-data">
+		<label for="non">Nombres</label>	<input type="text" name="nombres" id="non"><br>
+		<label for="app">Apellido paterno</label> 	<input type="text" name="app" id="app"><br>
+		<label for="apm">Apellido materno</label> 	<input type="text" name="apm" id="apm"><br>
+		<label for="clave">Clave</label>		<input type="password" name="clave" id="clave"><br>
+		<label>Sexo</label>
+		<input type="radio" name="sexo" value="m" id="m"> 	<label for="m">Masculino</label>
+		<input type="radio" name="sexo" value="f" id="f">	<label for="f">Femenino</label><br>
+
+		<label>Aficiones</label>
+		<input type="checkbox" name="afic[]" id="afic1" value="Football">
+			<label for="afic1">Football</label>
+		<input type="checkbox" name="afic[]" id="afic2" value="Voleyball">
+			<label for="afic1">Voleyball</label>
+		<input type="checkbox" name="afic[]" id="afic3" value="Basketball">
+			<label for="afic1">Basketball</label>
+		<input type="checkbox" name="afic[]" id="afic4" value="Natacion">
+			<label for="afic1">Natacion</label>
+		<input type="checkbox" name="afic[]" id="afic5" value="Lectura">
+			<label for="afic1">Lectura</label>
+		<input type="checkbox" name="afic[]" id="afic6" value="Cine">
+			<label for="afic1">Cine</label>
+
+		<label for="foto">Foto</label> <br>	<input type="file" name="foto" id="foto"><br><br>
+		<input type="submit" value="Enviar">
+</form>
+</body>
+</html>

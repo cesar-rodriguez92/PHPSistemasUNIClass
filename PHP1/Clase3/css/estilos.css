@@ -1,0 +1,15 @@
+#contenedor{
+	width: 900px;
+	margin: auto;
+}
+
+#botones{
+	text-align: center;
+	padding: 20px;
+}
+
+#imagen img{
+	width: 450px;
+	margin: auto;
+	
+}
