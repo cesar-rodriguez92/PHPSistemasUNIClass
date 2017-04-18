@@ -2,7 +2,7 @@
 $curso = 'PHP 1';
 $lugar = 'Sistemas UNI';
 
-setcookie('curso', $curso);
+setcookie('curso', $curso,time()+120); /*Esta cookie va a durar 2 minutos(120seg)*/
 setcookie('lugar', $lugar);
  ?>
 
