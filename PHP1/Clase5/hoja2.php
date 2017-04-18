@@ -38,7 +38,7 @@ $usuario['nombre']='cesar';
 $usuario['clave']='dfdsfsdfsdfr';
 $usuario['correo']='cvald@yahoo.es';
 
-
+/*
 foreach ($dias as $dia) {
 	echo "$dia <br>";
 }
@@ -47,5 +47,47 @@ foreach ($frutas as $indice => $fruta) {
 	echo "La fruta $fruta tiene el indice $indice <br>";
 }
 
+*/
+$lista = '<ul>';
+
+foreach ($dias as $dia) {
+	$lista.="<li>$dia</li>";
+}
+
+$lista.= "</ul>";
+
+
+function crearLista($arreglo){
+	$lista = '<ul>';
+	if (is_array($arreglo)) {
+		foreach ($arreglo as $item) {
+			$lista.="<li>$item</li>";
+		}
+	}
+	$lista.="</ul>";
+	return $lista;
+}
+
+
 ?>
 
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arreglos</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<div id="contenedor">
+		<div id="cabecera">Arreglos</div>
+		<div id="contenido">
+			<?php echo $lista; ?>
+			<?php echo crearLista($frutas); ?>
+			<?php echo crearLista($destinos); ?>
+		</div>
+
+	</div>
+
+</body>
+</html>
